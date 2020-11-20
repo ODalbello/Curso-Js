@@ -45,3 +45,5 @@ console.log(filha)
 //Uma função famosa que retorna objeto
 const fromJSON = JSON.parse('{"Info":"Sou um JSON"}')
 console.log(fromJSON.info)
+
+console.log("Merge parte 3")
