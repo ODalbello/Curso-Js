@@ -25,3 +25,5 @@ const obj5 = {
     }
 }
 console.log(obj5)
+
+console.log("teste de Merge 1")
