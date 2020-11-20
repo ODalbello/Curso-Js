@@ -40,3 +40,5 @@ delete carro.condutores
 delete carro.proprietario.endereco
 delete carro.calcularValorSeguro
 console.log(carro)
+
+console.log("testando merge 2")
