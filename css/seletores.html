@@ -6,7 +6,53 @@
     <title>CSS Selectors</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        /* Seletor Universal */
+        /* * {
+            color: #ff0;
+            background-color: #f77;
+        } */
+
+        /* Seletor de Classe */
+        /* .tag {
+            color: #ff0;
+            background-color: #f77;
+        } */
+
+        /* Seletor de ID */
+        /* #aprovados {
+            color: #ff0;
+            background-color: #f77;
+        } */
+        /* Seleciona somente os Descendetes diretos */
+        /* #aninhado > div {
+            color: #ff0;
+            background-color: #f77;
+        } */
+
+        /* Seletor de irmãos */
+        /* p + ul {
+            color: #ff0;
+            background-color: #f77;
+        } */
+
+        /* Seletor de atributo */
+        /* [feira] {
+            color: #ff0;
+            background-color: #f77;
+        } */
+
+        /* Seletor de filhos */
+        /* section > :nth-child(odd) {
+            color: #ff0;
+            background-color: #f77;
+        } */
+
+        /*Seletor de Filho direto*/
+        section > span:nth-of-type(2) {
+            color: #ff0;
+            background-color: #f77;
+        }
+
     </style>
 </head>
 
@@ -29,7 +75,7 @@
             </ol>
             <div id='aninhado' class='tag'>
                 <div class="tag">
-                    <section class='tag'>
+                    <section class='tag nolabel'>
                         <span class='tag'>1</span>
                         <p class='tag'>2</p>
                         <span class='tag'>3</span>
