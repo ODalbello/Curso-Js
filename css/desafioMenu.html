@@ -8,12 +8,76 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
         
+        body {
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+
         .cabecalho {
             background-color: #373737;
+            box-sizing: border-box;
+            padding: 5px 5px 2px 5px;
+            margin: 0px;
+        }
+
+        .logo {
+            display: inline-block;
+
+        }
+
+        .logo img{
+            width: 250px;
+            height: 50px;
         }
 
         .menu-toggle {
             display: none;
+        }
+
+        .menu {
+            display: inline-block;
+            position: absolute;
+        }
+
+        .menu ul {
+            padding: 0px;
+            margin: 0px;
+            margin-top: 12px;
+            margin-left: 30px;
+            background-color: #373737;
+            list-style: none;
+        }
+
+        .menu ul li {
+            display: inline-block;
+        }
+
+        .menu ul li:hover{
+            background-color: #6699ff;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-family: Oswald, sans-serif;
+            font-size: 20px;
+            padding: 15px;
+        }
+
+        a:hover { 
+            color: #000;
+        }
+
+        .autenticacao {
+            float: right;
+            margin-top: 12px;
+        }
+
+        .botao-destaque {
+            background-color: red;
+            border-radius: 35px;
+
         }
 
         @media (max-width: 500px) {
@@ -51,7 +115,7 @@
         </nav>
         <aside class="autenticacao">
             <a href="#login">Login</a>
-            <a href="#registar" class="botao destaque">Registrar</a>
+            <a href="#registar" class="botao-destaque">Registrar</a>
         </aside>
     </header>
 
