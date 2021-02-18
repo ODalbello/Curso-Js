@@ -115,28 +115,67 @@
         </button>
         <nav class="menu">
             <ul>
-                <li>
+                <li id= "inicio">
                     <a href="#inicio">Início</a>
                 </li>
-                <li>
+                <li id= "cursos">
                     <a href="#cursos">Cursos</a>
                 </li>
-                <li>
+                <li id= "sobre">
                     <a href="#sobre">Sobre</a>
                 </li>
-                <li>
+                <li id= "contato">
                     <a href="#contato">Contato</a>
                 </li>
             </ul>
         </nav>
         <aside class="autenticacao">
-            <a href="#login">Login</a>
-            <a href="#registar" class="botao-destaque">Registrar</a>
+            <a id="login" href="#login">Login</a>
+            <a id="registrar" href="#registar" class="botao-destaque">Registrar</a>
         </aside>
     </header>
 
     <script>
-        // ...
+
+        let hashUpdate = document.getElementById('hash-update');
+
+        window.addEventListener('hashchange', function () {
+            console.log('Hey, o hash mudou!');
+            hashUpdate =  window.location.hash;
+            marcaBotao(hashUpdate);
+            console.log(hashUpdate);
+            
+        })
+
+        function marcaBotao (hashUpdate) {
+            switch (hashUpdate) {
+                case "#inicio":
+                    console.log('inicio');
+                    document.getElementById("inicio").style.backgroundColor="#6699ff";
+                    break;
+                case "#cursos":
+                    console.log('cursos');
+                    document.getElementById("cursos").style.backgroundColor="#6699ff";
+                    break;
+                case "#sobre":
+                    console.log('sobre');
+                    document.getElementById("sobre").style.backgroundColor="#6699ff";
+                    break;
+                case  "#contato" :
+                    console.log('contato');
+                    document.getElementById("contato").style.backgroundColor="#6699ff";
+                    break;
+                case  "#login" :
+                    console.log('login');
+                    document.getElementById("login").style.backgroundColor="#6699ff";
+                    break;
+                case  "#registrar" :
+                    console.log('registrar');
+                    document.getElementById("registrar").style.backgroundColor="#6699ff";
+                    break;
+            }
+        }
+
     </script>
 </body>
 
