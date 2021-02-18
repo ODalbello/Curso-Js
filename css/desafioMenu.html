@@ -141,7 +141,7 @@
 
         window.addEventListener('hashchange', function () {
             console.log('Hey, o hash mudou!');
-            hashUpdate =  window.location.hash;
+            hashUpdate =  window.location.hash.substr(1);
             marcaBotao(hashUpdate);
             console.log(hashUpdate);
             
@@ -149,28 +149,29 @@
 
         function marcaBotao (hashUpdate) {
             switch (hashUpdate) {
-                case "#inicio":
+                case "inicio":
                     console.log('inicio');
                     document.getElementById("inicio").style.backgroundColor="#6699ff";
                     break;
-                case "#cursos":
+                case "cursos":
                     console.log('cursos');
                     document.getElementById("cursos").style.backgroundColor="#6699ff";
                     break;
-                case "#sobre":
+                case "sobre":
                     console.log('sobre');
                     document.getElementById("sobre").style.backgroundColor="#6699ff";
                     break;
-                case  "#contato" :
+                case  "contato" :
                     console.log('contato');
                     document.getElementById("contato").style.backgroundColor="#6699ff";
                     break;
-                case  "#login" :
+                case  "login" :
                     console.log('login');
                     document.getElementById("login").style.backgroundColor="#6699ff";
                     break;
-                case  "#registrar" :
+                case  "registrar" :
                     console.log('registrar');
+
                     document.getElementById("registrar").style.backgroundColor="#6699ff";
                     break;
             }
