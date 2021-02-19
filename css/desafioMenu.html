@@ -143,6 +143,7 @@
             console.log('Hey, o hash mudou!');
             hashUpdate =  window.location.hash.substr(1);
             marcaBotao(hashUpdate);
+            limpaMenu();
             console.log(hashUpdate);
             
         })
@@ -171,10 +172,18 @@
                     break;
                 case  "registrar" :
                     console.log('registrar');
-
                     document.getElementById("registrar").style.backgroundColor="#6699ff";
                     break;
             }
+        }
+
+        function limpaMenu() {
+            document.getElementById("inicio").style.backgroundColor="#6699ff";
+            document.getElementById("cursos").style.backgroundColor="#6699ff";
+            document.getElementById("sobre").style.backgroundColor="#6699ff";
+            document.getElementById("contato").style.backgroundColor="#6699ff";
+            document.getElementById("login").style.backgroundColor="#6699ff";
+            document.getElementById("registrar").style.backgroundColor="#6699ff";
         }
 
     </script>
