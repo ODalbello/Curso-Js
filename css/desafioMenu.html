@@ -142,8 +142,8 @@
         window.addEventListener('hashchange', function () {
             console.log('Hey, o hash mudou!');
             hashUpdate =  window.location.hash.substr(1);
-            marcaBotao(hashUpdate);
             limpaMenu();
+            marcaBotao(hashUpdate);
             console.log(hashUpdate);
             
         })
@@ -175,6 +175,14 @@
                     document.getElementById("registrar").style.backgroundColor="#6699ff";
                     break;
             }
+        }
+
+        function limpaMenu() {
+            document.getElementById("inicio").style.backgroundColor="transparent";
+            document.getElementById("cursos").style.backgroundColor="transparent";
+            document.getElementById("sobre").style.backgroundColor="transparent";
+            document.getElementById("contato").style.backgroundColor="transparent";
+            document.getElementById("login").style.backgroundColor="transparent";
         }
 
     </script>
