@@ -51,7 +51,7 @@ function Barreiras(altura, largura, abertura, espaco, notificarPonto) {
         new ParDeBarreiras(altura, abertura, largura),
         new ParDeBarreiras(altura, abertura, largura + espaco),
         new ParDeBarreiras(altura, abertura, largura + espaco * 2),
-        new ParDeBarreiras(altura, abertura, largura + espaco * 3),
+        new ParDeBarreiras(altura, abertura, largura + espaco * 3)
     ]
 
     const deslocamento = 3
@@ -60,7 +60,7 @@ function Barreiras(altura, largura, abertura, espaco, notificarPonto) {
             par.setX(par.getX() - deslocamento)
 
             // Quando o elemento sair da área do jogo
-            if (par.getX() < par.getLargura()) {
+            if (par.getX() < -par.getLargura()) {
                 par.setX(par.getX() + espaco * this.pares.length)
                 par.sortearAbertura()
             }
