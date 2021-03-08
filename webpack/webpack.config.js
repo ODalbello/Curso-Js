@@ -3,6 +3,7 @@ const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
 
 module.exports = {
     mode: modoDev ? 'development' : 'production',
@@ -11,7 +12,10 @@ module.exports = {
         filename: 'principal.js',
         path: __dirname + '/public'
     },
-
+    devServer: {
+        contentBase: "./public",
+        port: 9000
+    },
     plugins: [
         new MiniCssExtractPlugin({
             filename: "estilo.css"
