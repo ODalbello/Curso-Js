@@ -10,5 +10,8 @@ p
     .then(primeiro => primeiro[0])
     .then(letra => letra.toLowerCase())
     //.then(letraMinuscula => console.log(letraMinuscula))
-    .then(letraMaiuscula => letraMaiuscula.toUpperCase())
+    
     .then(Maiuscula => console.log(Maiuscula))
+    .then(letraMaiuscula => letraMaiuscula.toUpperCase())
+    .then(letraMaiuscula => letraMaiuscula.toUpperCase())
+    .then(letraMaiuscula => letraMaiuscula.toUpperCase())
